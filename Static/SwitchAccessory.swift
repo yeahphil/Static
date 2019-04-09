@@ -1,9 +1,9 @@
 import UIKit
 
-class SwitchAccessory : UISwitch {
-    typealias ValueChange = (Bool) -> ()
+public class SwitchAccessory : UISwitch {
+    public typealias ValueChange = (Bool) -> ()
     
-    init(initialValue: Bool, valueChange: (ValueChange)? = nil) {
+    public init(initialValue: Bool, valueChange: (ValueChange)? = nil) {
         self.valueChange = valueChange
         super.init(frame: .zero)
         setOn(initialValue, animated: false)
